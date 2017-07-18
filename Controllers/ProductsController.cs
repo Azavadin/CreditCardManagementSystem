@@ -9,6 +9,7 @@ using System.Web.Mvc;
 using CreditCardManagementSystem.DAL;
 using CreditCardManagementSystem.Models;
 using CreditCardManagementSystem.ViewModels;
+using PagedList;
 
 namespace CreditCardManagementSystem.Controllers
 {
@@ -17,7 +18,7 @@ namespace CreditCardManagementSystem.Controllers
         private StoreContext db = new StoreContext();
 
         // GET: Products
-        public ActionResult Index(string category, string search)
+        public ActionResult Index(string category, string search, string sortBy, int? page)
         {
             //instantiate a new view model
             ProductIndexViewModel viewModel = new ProductIndexViewModel();
@@ -45,8 +46,29 @@ namespace CreditCardManagementSystem.Controllers
             if (!String.IsNullOrEmpty(category))
             {
                 products = products.Where(p => p.Category.Name == category);
+                viewModel.Category = category;
             }
-            viewModel.Products = products;
+            switch (sortBy)
+            {
+                case "interest_lowest":
+                    products = products.OrderBy(p => p.Interest);
+                    break;
+                case "interest_highest":
+                    products = products.OrderByDescending(p => p.Interest);
+                    break;
+                default:
+                    products = products.OrderBy(p => p.Name);
+                    break;
+            }
+            const int PageItems = 3;
+            int currentPage = (page ?? 1);
+            viewModel.Products = products.ToPagedList(currentPage, PageItems);
+            viewModel.SortBy = sortBy;
+            viewModel.Sorts = new Dictionary<string, string>
+    {
+        {"Price low to high", "price_lowest" },
+        {"Price high to low", "price_highest" }
+    };
             return View(viewModel);
         }
         // GET: Products/Details/5
