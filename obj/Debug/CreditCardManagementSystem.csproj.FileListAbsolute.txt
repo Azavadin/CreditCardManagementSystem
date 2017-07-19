@@ -94,9 +94,10 @@ C:\Users\user\Desktop\CreditCardManagementSystem\CreditCardManagementSystem\bin\
 C:\Users\user\Desktop\CreditCardManagementSystem\CreditCardManagementSystem\obj\Debug\CreditCardManagementSystem.csprojResolveAssemblyReference.cache
 C:\Users\user\Desktop\CreditCardManagementSystem\CreditCardManagementSystem\obj\Debug\CreditCardManagementSystem.dll
 C:\Users\user\Desktop\CreditCardManagementSystem\CreditCardManagementSystem\obj\Debug\CreditCardManagementSystem.pdb
-C:\Users\user\Desktop\CreditCardManagementSystem\CreditCardManagementSystem\obj\Debug\CreditCardManagementSystem.Migrations.InitialDatabase.resources
-C:\Users\user\Desktop\CreditCardManagementSystem\CreditCardManagementSystem\obj\Debug\CreditCardManagementSystem.csproj.GenerateResource.Cache
 C:\Users\user\Desktop\CreditCardManagementSystem\CreditCardManagementSystem\bin\PagedList.dll
 C:\Users\user\Desktop\CreditCardManagementSystem\CreditCardManagementSystem\bin\PagedList.Mvc.dll
 C:\Users\user\Desktop\CreditCardManagementSystem\CreditCardManagementSystem\bin\PagedList.xml
 C:\Users\user\Desktop\CreditCardManagementSystem\CreditCardManagementSystem\bin\PagedList.Mvc.xml
+C:\Users\user\Desktop\CreditCardManagementSystem\CreditCardManagementSystem\obj\Debug\CreditCardManagementSystem.Migrations.InitialCreate.resources
+C:\Users\user\Desktop\CreditCardManagementSystem\CreditCardManagementSystem\obj\Debug\CreditCardManagementSystem.csproj.GenerateResource.Cache
+C:\Users\user\Desktop\CreditCardManagementSystem\CreditCardManagementSystem\obj\Debug\CreditCardManagementSystem.Migrations.InitialDatabase.resources

@@ -203,9 +203,13 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201707131134514_InitialDatabase.cs" />
-    <Compile Include="Migrations\201707131134514_InitialDatabase.Designer.cs">
-      <DependentUpon>201707131134514_InitialDatabase.cs</DependentUpon>
+    <Compile Include="Migrations\201707130704202_InitialCreate.cs" />
+    <Compile Include="Migrations\201707130704202_InitialCreate.Designer.cs">
+      <DependentUpon>201707130704202_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201707190040544_InitialDatabase.cs" />
+    <Compile Include="Migrations\201707190040544_InitialDatabase.Designer.cs">
+      <DependentUpon>201707190040544_InitialDatabase.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -213,6 +217,7 @@
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\Product.cs" />
+    <Compile Include="Models\ProductImage.cs" />
     <Compile Include="Models\ProductMetaData.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
@@ -305,8 +310,11 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201707131134514_InitialDatabase.resx">
-      <DependentUpon>201707131134514_InitialDatabase.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201707130704202_InitialCreate.resx">
+      <DependentUpon>201707130704202_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201707190040544_InitialDatabase.resx">
+      <DependentUpon>201707190040544_InitialDatabase.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
